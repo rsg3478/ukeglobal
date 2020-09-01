@@ -1,7 +1,14 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./nse/js/HuskyEZCreator.js" charset="utf-8"></script>
 <style>.nse_content{width:660px;height:500px}</style>
-
+<?php
+    include "./head.php";
+    ?>
+    <div class="mainbar">
+    <?php
+    include "./sidebar.php";
+    ?>
+<div class="dashboard">
 <div class="board_tool">
     <table>
 <form name="popup_nse" onsubmit="return submitContents();" method="post">
@@ -67,3 +74,10 @@ nhn.husky.EZCreator.createInIFrame({
 </table>
 </div>
 
+
+</div>
+</div>
+
+<?php
+include "./footer.php"
+?>

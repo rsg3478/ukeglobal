@@ -1,9 +1,23 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./nse/js/HuskyEZCreator.js" charset="utf-8"></script>
-<script type="text/javascript" src="../js/board_checkbox.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/board_w_u_checkbox.js" charset="utf-8"></script>
 <style>.nse_content{width:660px;height:500px}</style>
-  
+<?php
+    include "./head.php";
+    ?>
+<div class="mainbar">
+    <?php
+    include "./sidebar.php";
+
+$parameter = $_GET["title"];
+if($parameter == "notice")
+$parameter = "공지사항";
+else
+$parameter = "뉴스";
+
+?>
+<div class="dashboard">
 <div class="board_tool">
 <table>
 <form name="board_nse" onsubmit="return submitContents();" method="post">
@@ -12,7 +26,7 @@
 
 <th> 제목: </th><td ><input type="text" name="category" id="category"></td>
 <tr>
-<th> 카테고리: </th><td><input type="text" name="category" id="category"></td>
+<th> 카테고리: </th><td><input type="text" name="category" id="category" value="<?php echo $parameter;?>"></td>
 <th> check시 게시물등록 </th><td><input type="checkbox" name="check" id="check"></td>
 </tr>
 <tr>
@@ -22,9 +36,7 @@
 <td><input type="submit" value="전송" onclick="submitContents(this); return false;" /></td>
 </tr> 
 
-<?}else{
-    include("");
-    ?>
+<?}else{include("");?>
 
 <th> 제목: </th><td ><input type="text" name="category" id="category"></td>
 <tr>
@@ -55,3 +67,8 @@ nhn.husky.EZCreator.createInIFrame({
 </form>
 </table>
 </div>
+</div>
+</div>
+<?php
+include "./footer.php"
+?>

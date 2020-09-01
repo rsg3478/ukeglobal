@@ -32,11 +32,10 @@ $sql = "insert into `{$table}` (
 $res = $connect->query($sql);
 
 
-
-if($res) {
+/* if($res) {
     // DB에 입력 성공시
     echo "success <a href='./show.php' target='_blank'>show</a> click.";
 } else {
     echo ("Error description: " . $connect -> error);; // DB에 입력 실패시 '실패' 표시
-} 
+}  */
 ?>

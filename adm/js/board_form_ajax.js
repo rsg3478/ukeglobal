@@ -38,7 +38,6 @@ function validate() {
 
 //ajax 전송
 function form_submit(formData){
-alert("diq");
 $.ajax({
 type : 'post',
 url : './connection/board_db_insert.php',
