@@ -77,7 +77,7 @@ function form_submit(formData) {
             alert("error:" + error);
         },
         success: function (data) {
-            //console.log(data)
+            console.log(data)
         }
     });
 

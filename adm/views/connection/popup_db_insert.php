@@ -1,8 +1,15 @@
 <?php
-include "../../data/db_conn.php"; // 데이터 베이스 접속 프로그램 불러오기
+include "../../data/db_conn.php"; // 데이터 베이스 접속 불러오기
+
+//include "../../data/db_query.php"; //query 문 불러오기
 
 $connect = new mysqli($host, $databaseUser, $databasePassword, $databaseName);
 $connect->set_charset('utf8');
+ 
+function query($sql){  
+global $connect;
+return $res = $connect->query($sql);
+}
 
 //테이블 명
 $table = 'popup';
@@ -15,7 +22,7 @@ $height = $connect->escape_string($_POST['height']);
 $top_position = $connect->escape_string($_POST['top_position']);
 $left_position = $connect->escape_string($_POST['left_position']);
 
-$sql = "insert into `{$table}` (
+$insert = "insert into `{$table}` (
     title,
     content,
     id,
@@ -38,12 +45,12 @@ $sql = "insert into `{$table}` (
   )";
   
 
-$res = $connect->query($sql);
+$res = query($insert);
 
-/* if($res) {
+ if($res) {
     // DB에 입력 성공시
     echo "success <a href='./show.php' target='_blank'>show</a> click.";
 } else {
     echo ("Error description: " . $connect -> error);; // DB에 입력 실패시 '실패' 표시
-} */
+} 
 ?>

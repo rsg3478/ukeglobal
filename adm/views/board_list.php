@@ -1,5 +1,4 @@
 <?php 
-include "../data/db_query.php";
 include "./head.php";
 ?>
 <div class="mainbar">
@@ -31,8 +30,14 @@ include "./head.php";
             $parameter = "공지사항";
             else
             $parameter = "뉴스";
+
+          include "../data/db_query.php";
+
         // board테이블에서 no를 기준으로 내림차순해서 5개까지 표시
-          $sql = query("select * from board where category='$parameter' order by no desc limit 0,10");
+        $select = "select * from board where category='$parameter' order by no desc limit 0,10";
+
+          $sql = query($select);
+          
             while($board = $sql->fetch_array()){
               //title변수에 DB에서 가져온 title을 선택
               $title=$board["title"]; 
@@ -51,9 +56,9 @@ include "./head.php";
           <? if($board['true_false'])?>
           <td width="100">
             <? if($board['true_false'] == 1){?>
-            <input type="checkbox" value="1" checked>
+            <input type="checkbox" value="<?php echo $board['no'];?>" checked>
             <?} else{?>
-            <input type="checkbox" value="0">
+            <input type="checkbox" value="<?php echo $board['no'];?>">
             <?}?>
          </td>
         </tr>
@@ -62,7 +67,7 @@ include "./head.php";
       <?php } ?>
 
     </table>
- 
+
   </div>
   </div>
 </div>
