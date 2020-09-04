@@ -118,3 +118,7 @@ footer.footer {
     /* background-size: cover; */
     height: 500px;
 }
+
+.textright {
+    text-align: right;
+}

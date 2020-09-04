@@ -32,4 +32,6 @@ define('UKE_IMG_URL',      UKE_URL.'/'.UKE_IMG_DIR);
 define('UKE_PUBLIC_URL',      UKE_URL.'/'.UKE_PUBLIC_DIR);
 define('UKE_SCSS_URL',      UKE_URL.'/'.UKE_SCSS_DIR);
 define('UKE_VENDOR_URL',      UKE_URL.'/'.UKE_VENDOR_DIR);
+
+// define('UKE_MAIN_URL',      UKE_WEB_URL.'/uke/main');
 ?>

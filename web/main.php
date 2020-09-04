@@ -2,6 +2,8 @@
 include_once('web/common/header.php');
 include_once('web/common/menu.php');
 include_once('web/uke/main/slide.php');
+include_once('web/uke/main/introduce.php');
+include_once('web/uke/main/thenews.php');
 ?>
 
 <!-- Masthead -->
@@ -16,13 +18,11 @@ include_once('web/uke/main/slide.php');
                 <form>
                     <div class="form-row">
                         <div class="col-12 col-md-9 mb-2 mb-md-0">
-                            <input
-                                type="email"
-                                class="form-control form-control-lg"
-                                placeholder="Enter your email...">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
                         </div>
                         <div class="col-12 col-md-3">
                             <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                            <a href="/wed/uke/main/slide.php">ssss</a>
                         </div>
                     </div>
                 </form>
