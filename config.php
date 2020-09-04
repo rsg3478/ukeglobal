@@ -3,6 +3,7 @@ define('UKE_DOMAIN', '');
 
 define('UKE_WEB_DIR',      'wed');
 define('UKE_CSS_DIR',      'css');
+define('UKE_JS_DIR',      'js');
 define('UKE_IMG_DIR',      'img');
 define('UKE_PUBLIC_DIR',      'public');
 define('UKE_SCSS_DIR',      'scss');
@@ -26,6 +27,7 @@ if (isset($UKE_path['path'])) {
 
 define('UKE_WEB_URL',      UKE_URL.'/'.UKE_WEB_DIR);
 define('UKE_CSS_URL',      UKE_URL.'/'.UKE_CSS_DIR);
+define('UKE_JS_URL',      UKE_URL.'/'.UKE_JS_DIR);
 define('UKE_IMG_URL',      UKE_URL.'/'.UKE_IMG_DIR);
 define('UKE_PUBLIC_URL',      UKE_URL.'/'.UKE_PUBLIC_DIR);
 define('UKE_SCSS_URL',      UKE_URL.'/'.UKE_SCSS_DIR);
