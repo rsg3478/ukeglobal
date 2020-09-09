@@ -1,5 +1,6 @@
 <?php
 include_once('./config.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -23,6 +24,10 @@ include_once('./config.php');
 
         <!-- Custom styles for this template -->
         <link href="<?php echo UKE_CSS_URL?>/landing-page.min.css" rel="stylesheet">
+
+        <!-- 나눔폰트 -->
+        <link href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css" rel="stylesheet" type="text/css">
+        <link href='http://www.openhiun.com/hangul/nanumbarungothic.css' rel='stylesheet' type='text/css'>
 
 
     </head>
