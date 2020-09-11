@@ -1,5 +1,5 @@
 <?php
-include_once('/data/db_conn.php')
+include_once('db_conn.php');
 
 //1. DB 연결
 $dsn = 'mysql:host='.$host.';dbname='.$databaseName.';port='.$mysql_port.';charset='.$mysql_charset;

@@ -6,10 +6,10 @@
 */
 
 //0. 설정
-$mysql_hostname = 'luie12.cafe24.com';
-$mysql_username = 'luie12';
-$mysql_password = 'qazxsw1@';
-$mysql_database = 'luie12';
+$mysql_hostname = '';
+$mysql_username = '';
+$mysql_password = '';
+$mysql_database = '';
 $mysql_port = '3306';
 $mysql_charset = 'utf8';
 
