@@ -32,23 +32,24 @@ $parameter = "뉴스";
         </thead>
 
 <?php
-        include_once('../data/db_query.php')
+        include_once('../data/db_query.php');
 
-    /*     $select = "select * from board where category='$parameter' order by no desc limit 0,10";
+    $select = "select * from board where category='$parameter' order by no desc limit 0,10";
 
         $sql = query($select);
+        echo "<script>console.log($sql);</script>";
         
-          while($board = $sql->fetch_array()){
+        while($board = $sql->fetch()){
             //title변수에 DB에서 가져온 title을 선택
             $title=$board["title"]; 
             if(strlen($title)>30){ 
               //title이 30을 넘어서면 ...표시
               $title=str_replace($board["title"],mb_substr($board["title"],0,30,"utf-8")."...",$board["title"]);
-            } */
+            } 
 ?>
     <tbody>
       <tr>
-<!--         <td width="70"><?php echo $board['no']; ?></td>
+        <td width="70"><?php echo $board['no']; ?></td>
         <td width="500"><a href=""><?php echo $title;?></a></td>
         <td width="120"><?php echo $board['category']?></td>
         <td width="100"><?php echo $board['id']?></td>
@@ -59,11 +60,12 @@ $parameter = "뉴스";
           <input type="checkbox" value="<?php echo $board['no'];?>" checked>
           <?} else{?>
           <input type="checkbox" value="<?php echo $board['no'];?>">
-          <?}?> -->
+          <?}?>
        </td>
       </tr>
     </tbody>
 
+<? }?>
 
     </table>
 

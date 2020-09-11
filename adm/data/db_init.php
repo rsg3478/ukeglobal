@@ -5,14 +5,15 @@ ini_set('display_errors',1);
 
 include('check.php');
 include('db_conn.php');
+
 /*
- * 데이터베이스 생성
- */
-/* ("mysql:host=$host;dbname=$databaseName",$databaseUser, $databasePassword);
+데이터베이스 생성
+("mysql:host=$host;dbname=$databaseName",$databaseUser, $databasePassword);
 $pdoDatabase = new PDO($host, $databaseUser, $databasePassword);
 $pdoDatabase->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdoDatabase->exec('DROP DATABASE IF EXISTS '.$databaseName);
-$pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS userdb DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci'); */
+$pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS userdb DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci'); 
+*/
 
 
 /*
@@ -21,9 +22,9 @@ $pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS userdb DEFAULT CHARSET=utf8 CO
 $pdo = new PDO("mysql:host=$host;dbname=$databaseName",$databaseUser, $databasePassword);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
-$pdo->exec('DROP TABLE IF EXISTS users;');
+$pdo->exec('DROP TABLE IF EXISTS admin_users;');
 
-$pdo->exec('CREATE TABLE `admin_user` (
+$pdo->exec('CREATE TABLE `admin_users` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `username` VARCHAR(255) NOT NULL,
     `password` VARCHAR(255) NOT NULL,
@@ -72,7 +73,7 @@ $default_password = 'admin';
 $salt = bin2hex(openssl_random_pseudo_bytes(32));
 $encrypted_password = base64_encode(encrypt($default_password, $salt));
 
-$createAdmin = $pdo->prepare('INSERT INTO users 
+$createAdmin = $pdo->prepare('INSERT INTO admin_users 
 	(username, password, is_admin, activate, salt) VALUES
     ("admin", :password, 1, 1, :salt)');
 

@@ -1,18 +1,3 @@
-<!-- <?php
-$host = 'luie12.cafe24.com';
-$databaseName = 'luie12';
-$databaseUser = 'luie12';
-$databasePassword = 'qazxsw1@';
-$mysqli = new mysqli($host,$databaseUser,$databasePassword,$databaseName);
-
-if ($mysqli -> connect_errno) {
-  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-  exit();
-}
-echo "연결 성공";
-
-$mysqli -> close();
-?> -->
 <?
 /**
  * pdo 클래스 방식
