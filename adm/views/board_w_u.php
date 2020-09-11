@@ -1,24 +1,23 @@
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="./nse/js/HuskyEZCreator.js" charset="utf-8"></script>
-<script type="text/javascript" src="../js/board_w_u_checkbox.js" charset="utf-8"></script>
-<style>.nse_content{width:660px;height:500px}</style>
 <?php
-    include "./head.php";
-    ?>
-<div class="mainbar">
-    <?php
-    include "./sidebar.php";
+include_once('common/head.php');
+include_once('common/header.php');
+include_once('common/menu.php');
 
 $parameter = $_GET["title"];
 if($parameter == "notice")
 $parameter = "공지사항";
 else
 $parameter = "뉴스";
-
 ?>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./nse/js/HuskyEZCreator.js" charset="utf-8"></script>
+<script type="text/javascript" src="../js/board_w_u_checkbox.js" charset="utf-8"></script>
+<style>.nse_content{width:660px;height:500px}</style>
+
 <div class="dashboard">
 <div class="board_tool">
+
 <table>
 <form name="board_nse" onsubmit="return submitContents();" method="post">
 
@@ -66,9 +65,9 @@ nhn.husky.EZCreator.createInIFrame({
    
 </form>
 </table>
-</div>
+
 </div>
 </div>
 <?php
-include "./footer.php"
+include_once('common/footer.php');
 ?>

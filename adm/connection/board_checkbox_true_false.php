@@ -1,5 +1,5 @@
 <?php
-include "../../data/db_conn.php"; // 데이터 베이스 접속 불러오기
+include "./data/db_conn.php"; // 데이터 베이스 접속 불러오기
 
 
 $connect = new mysqli($host, $databaseUser, $databasePassword, $databaseName);

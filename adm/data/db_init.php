@@ -1,4 +1,5 @@
 <?php
+//phpinfo();
 error_reporting(E_ALL); 
 ini_set('display_errors',1); 
 
@@ -7,16 +8,17 @@ include('db_conn.php');
 /*
  * 데이터베이스 생성
  */
-$pdoDatabase = new PDO('mysql:host=localhost', $databaseUser, $databasePassword);
+/* ("mysql:host=$host;dbname=$databaseName",$databaseUser, $databasePassword);
+$pdoDatabase = new PDO($host, $databaseUser, $databasePassword);
 $pdoDatabase->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdoDatabase->exec('DROP DATABASE IF EXISTS '.$databaseName);
-$pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS userdb DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci');
+$pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS userdb DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci'); */
 
 
 /*
  * 테이블 생성
  */
-$pdo = new PDO('mysql:host=localhost;dbname='.$databaseName, $databaseUser, $databasePassword);
+$pdo = new PDO("mysql:host=$host;dbname=$databaseName",$databaseUser, $databasePassword);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
 $pdo->exec('DROP TABLE IF EXISTS users;');
