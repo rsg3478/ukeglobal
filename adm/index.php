@@ -1,3 +1,3 @@
 <?php
-include_once('views/main.php');
+include_once('./views/main/main.php');
 ?>
