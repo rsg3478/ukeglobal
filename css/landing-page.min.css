@@ -33,6 +33,56 @@ h6 {
     font-family: "Nanum Barun Gothic", sans-serif;
     font-weight: 700;
 }
+/* Color Theme Swatches in Hex */
+.Kleurthema-8-1-hex {
+    color: #6581a6;
+}
+.Kleurthema-8-2-hex {
+    color: #b8c6d9;
+}
+.Kleurthema-8-3-hex {
+    color: #d8e3f2;
+}
+.Kleurthema-8-4-hex {
+    color: #7ea1bf;
+}
+.Kleurthema-8-5-hex {
+    color: #6d7e8c;
+}
+
+/* Color Theme Swatches in RGBA */
+.Kleurthema-8-1-rgba {
+    color: rgba(101, 129, 165, 1);
+}
+.Kleurthema-8-2-rgba {
+    color: rgba(184, 198, 216, 1);
+}
+.Kleurthema-8-3-rgba {
+    color: rgba(215, 227, 242, 1);
+}
+.Kleurthema-8-4-rgba {
+    color: rgba(126, 160, 191, 1);
+}
+.Kleurthema-8-5-rgba {
+    color: rgba(109, 125, 140, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.Kleurthema-8-1-hsla {
+    color: hsla(214, 26, 52, 1);
+}
+.Kleurthema-8-2-hsla {
+    color: hsla(214, 29, 78, 1);
+}
+.Kleurthema-8-3-hsla {
+    color: hsla(213, 51, 89, 1);
+}
+.Kleurthema-8-4-hsla {
+    color: hsla(208, 33, 62, 1);
+}
+.Kleurthema-8-5-hsla {
+    color: hsla(208, 12, 48, 1);
+}
 header.masthead {
     position: relative;
     background-color: #343a40;
