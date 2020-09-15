@@ -4,31 +4,23 @@
     <ul class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active"></li>
         <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
     </ul>
 
     <!-- The slideshow -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="<?php echo UKE_IMG_URL?>/bg-masthead.jpg" alt="Los Angeles">
-            <div class="carousel-caption">
+            <img src="<?php echo UKE_IMG_URL?>/main/banner01.jpg" alt="Los Angeles">
+            <!-- <div class="carousel-caption">
                 <h3>Los Angeles</h3>
                 <p>We had such a great time in LA!</p>
-            </div>
+            </div> -->
         </div>
         <div class="carousel-item">
-            <img src="<?php echo UKE_IMG_URL?>/bg-masthead.jpg" alt="Chicago">
-            <div class="carousel-caption">
+            <img src="<?php echo UKE_IMG_URL?>/main/banner02.jpg" alt="Chicago">
+            <!-- <div class="carousel-caption">
                 <h3>Los Angeles</h3>
                 <p>We had such a great time in LA!</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="<?php echo UKE_IMG_URL?>/bg-masthead.jpg" alt="New York">
-            <div class="carousel-caption">
-                <h3>Los Angeles</h3>
-                <p>We had such a great time in LA!</p>
-            </div>
+            </div> -->
         </div>
     </div>
 

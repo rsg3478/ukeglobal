@@ -64,7 +64,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    /* color: #212529; */
+    color: #0a1020;
     text-align: left;
     background-color: #fff;
 }
@@ -6242,6 +6243,24 @@ a.bg-grey:hover,
 button.bg-grey:focus,
 button.bg-grey:hover {
     background-color: #f2f2f2 !important;
+}
+.bg-bluewhite {
+    background: linear-gradient(to right, #cde0f1, #adcbe5) !important;
+}
+a.bg-bluewhite:focus,
+a.bg-bluewhite:hover,
+button.bg-bluewhite:focus,
+button.bg-bluewhite:hover {
+    background: linear-gradient(to right, #cde0f1, #adcbe5) !important;
+}
+.bg-skybluewhite {
+    background: linear-gradient(to right, #cbe8fc, #d8e3f2) !important;
+}
+a.bg-skybluewhite:focus,
+a.bg-skybluewhite:hover,
+button.bg-skybluewhite:focus,
+button.bg-skybluewhite:hover {
+    background: linear-gradient(to right, #cbe8fc, #d8e3f2) !important;
 }
 .bg-white {
     background-color: #fff !important;
