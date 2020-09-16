@@ -6,6 +6,7 @@
             <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/introduce.php">UKE</a>
             <a class="navbar-brand" href="#">소개</a>
             <a class="navbar-brand" href="#">거래소</a>
+            <a class="navbar-brand" href="#">지갑</a>
             <a class="navbar-brand" href="#">쇼핑몰</a>
         </div>
         <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
@@ -32,15 +33,20 @@
             <a class="navbar-brand" href="#">추천시스템</a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="#">WCC</a>
-            <a class="navbar-brand" href="#">CHC</a>
-            <a class="navbar-brand" href="#">GEC</a>
-            <a class="navbar-brand" href="#">MDC</a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_chc">CHC</a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_gec">GEC</a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_mdc">MDC</a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="#">할인전용쇼핑몰</a>
-            <a class="navbar-brand" href="#">UKE쇼핑몰</a>
-            <a class="navbar-brand" href="#">코인전용쇼핑몰</a>
+            <a class="navbar-brand" href="https://wcc-kr.uke.co.kr/home/">WCC</a>
+            <a class="navbar-brand" href="http://wallet.uke.co.kr/login">ATM</a>
+            <a class="navbar-brand" href="https://chc.uke.co.kr/home/">CHC</a>
+            <a class="navbar-brand" href="https://chc.uke.co.kr/home/" data-toggle="modal" data-target="#button01">GEC</a>
+        </div>
+        <div class="">
+            <a class="navbar-brand" href="http://uke.center/s_bbs/shop/">할인전용쇼핑몰</a>
+            <a class="navbar-brand" href="https://uke.playhan.com/">UKE쇼핑몰</a>
+            <a class="navbar-brand" href="http://ukeshop.co.kr/">코인전용쇼핑몰</a>
         </div>
     </div>
 </div>

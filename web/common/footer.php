@@ -10,19 +10,19 @@
             <div class="col-lg-8 h-100 text-center text-lg-left my-auto footerfont">
                 <ul class="list-inline mb-2">
                     <li class="list-inline-item">
-                        <a href="#">WCC센터</a>
+                        <a href="https://open.kakao.com/o/g7JUlx3b">WCC센터</a>
                     </li>
                     <li class="list-inline-item">&#124;</li>
                     <li class="list-inline-item">
-                        <a href="#">UKE센터</a>
+                        <a href="https://open.kakao.com/o/ge6p0w3b">UKE센터</a>
                     </li>
                     <li class="list-inline-item">&#124;</li>
                     <li class="list-inline-item">
-                        <a href="#">CHC센터 </a>
+                        <a href="https://open.kakao.com/o/gvO41w3b">CHC센터 </a>
                     </li>
                     <li class="list-inline-item">&#124;</li>
                     <li class="list-inline-item">
-                        <a href="#">유케이몰 고객센터</a>
+                        <a href="https://open.kakao.com/o/gknUUTec">유케이몰 고객센터</a>
                     </li>
                 </ul>
                 <div class="normal footerfont105">

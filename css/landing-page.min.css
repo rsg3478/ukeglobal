@@ -200,12 +200,12 @@ footer.footer {
 }
 
 .menucenter {
-    width: 60%;
+    width: 70%;
     text-align: center;
 }
 
 .menucenter a {
-    width: 20%;
+    width: 15%;
 }
 
 .ellipsis_multi_one {
@@ -248,7 +248,7 @@ footer.footer {
 }
 
 .menufome > .fomebox {
-    width: 630px;
+    width: 720px;
     text-align: center;
     position: absolute;
     left: 51.4%;
@@ -256,7 +256,7 @@ footer.footer {
 }
 
 .menufome > .fomebox > div {
-    width: 23%;
+    width: 18%;
     display: inline-table;
 }
 
