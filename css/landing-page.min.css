@@ -234,7 +234,7 @@ footer.footer {
 }
 
 .main_notice {
-    height: 128px;
+    height: 145px;
 }
 
 .menufome {
@@ -345,7 +345,25 @@ footer.footer {
     color: #dedede;
 }
 
+.downloadbtn {
+    text-align: end;
+}
+
+.downloadbtn > a > img {
+    width: 1rem;
+}
+
 .footerlogo {
     width: 120px;
     padding-bottom: 1.5rem;
+}
+
+.footerfont105 {
+    font-size: 1.05rem;
+}
+.footerhr {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    border: 0;
+    border-top: 2px solid white;
 }
