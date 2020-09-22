@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="footer bg-dark nanumsquare">
+<footer class="footer bg-footer nanumsquare">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -91,6 +91,69 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="<?php echo UKE_JS_PATH?>/mainslide.js"></script>
+<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=64ceb0c0da020f1ce81b8ff43391ee70"></script>
+<script>
+
+    w3.includeHTML();
+
+    $(window).on("load", function () {
+        $(".loading").fadeOut();
+    });
+
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(37.520396, 127.029105),
+        level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(37.520396, 127.029105); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+    var iwContent = '<div style="padding:4px; font-size: 0.94em;">성도빌딩 9층 <a href="https://map.kakao.com/link/to/서울 강남구 도산대로 207,37.520396, 127.029105" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        iwPosition = new kakao.maps.LatLng(33.450701, 126.570667); //인포윈도우 표시 위치입니다
+
+    // 인포윈도우를 생성합니다
+    var infowindow = new kakao.maps.InfoWindow({
+        position : iwPosition, 
+        content : iwContent 
+    });
+    
+    // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+    infowindow.open(map, marker);
+
+    // $(document).ready(function(){
+    //     $('.nav-tabs a').on('shown.bs.tab', function(){
+    //         alert('The new tab is now fully shown.');
+    //         $(".fouc").show();
+    //     });
+    // });
+
+    // $(document).ready(function () {
+    //     $(".nav-tabs a").click(function () {
+    //         $(this).tab('show');
+    //     });
+        
+    //     $('.nav-tabs a').on('shown.bs.tab', function (event) {
+    //         var x = $(event.target).text(); // active tab
+    //         var y = $(event.relatedTarget).text(); // previous tab
+    //         $(".act span").text(x);
+    //         $(".prev span").text(y);
+    //     });
+    // });
+
+    
+</script>
 
 </body>
 

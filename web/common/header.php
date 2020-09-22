@@ -11,6 +11,11 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/config.php');
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
+        <mata property="og:type" content="website" />
+        <meta property="og:url" content="uke.global" />
+        <meta property="og:title" content="Uke" />
+        <meta property="og:description" content="信 코인사용처 ATM CREDIT!" />
+        <meta property="og:image" content="http://luie123.cafe24.com/img/uke_mainimg.png" />
 
         <title>ukeglobal</title>
 
@@ -33,3 +38,6 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/config.php');
     </head>
 
     <body>
+    <div class="loading">
+        <img class="imgcenter" src="<?php echo UKE_IMG_PATH?>/ajax-loader.gif" />
+    </div>

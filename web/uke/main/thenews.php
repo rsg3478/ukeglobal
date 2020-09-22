@@ -7,7 +7,7 @@
                     <a class="view_more_btn" >더보기 &#62;</a>
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="card" >
+                            <div class="card marginbottom1rem" >
                                 <div class="mainnewsimgbox">
                                     <img class="mx-auto d-block" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
                                 </div>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="card" >
+                            <div class="card marginbottom1rem" >
                                 <div class="mainnewsimgbox">
                                     <img class="mx-auto d-block" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
                                 </div>

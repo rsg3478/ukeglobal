@@ -34,6 +34,42 @@ h6 {
     font-family: "Nanum Barun Gothic", sans-serif;
     font-weight: 700;
 }
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+}
+.loading2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+}
+
+.imgcenter {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    position: absolute;
+}
+
+@media (max-width: 600px) {
+    .imgcenter {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        position: absolute;
+    }
+}
+
 /* Color Theme Swatches in Hex */
 .Kleurthema-8-1-hex {
     color: #6581a6;
@@ -195,6 +231,10 @@ footer.footer {
     /* height: 500px; */
 }
 
+.bannerimg {
+    width: 100%;
+}
+
 .textright {
     text-align: right;
 }
@@ -248,10 +288,10 @@ footer.footer {
 }
 
 .menufome > .fomebox {
-    width: 720px;
+    width: 730px;
     text-align: center;
     position: absolute;
-    left: 51.4%;
+    left: 50.5%;
     transform: translate(-49.7%);
 }
 
@@ -265,10 +305,11 @@ footer.footer {
     margin-bottom: 0;
     color: rgb(255, 255, 255);
     font-size: 16px;
+    margin-right: 0;
 }
 
 .menufome > .fomebox > div > a:hover {
-    color: #343a40;
+    color: #7ea1bf;
     cursor: pointer;
 }
 
@@ -366,4 +407,26 @@ footer.footer {
     margin-bottom: 0.3rem;
     border: 0;
     border-top: 2px solid white;
+}
+
+.submenu {
+    width: 65%;
+    margin: auto;
+}
+
+.submenu li:hover {
+    background-color: aliceblue;
+}
+
+.submenu li a {
+    color: aliceblue;
+}
+
+.submenu li a:hover {
+    color: #343a40;
+    font-weight: 900;
+}
+
+.marginbottom1rem {
+    margin-bottom: 1rem;
 }

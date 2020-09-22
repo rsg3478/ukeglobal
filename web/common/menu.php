@@ -23,10 +23,10 @@
 <div class="menufome">
     <div class="fomebox">
         <div class="">
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/introduce.php">소개</a>
-            <a class="navbar-brand" href="#">뉴스</a>
-            <a class="navbar-brand" href="#">공지사항</a>
-            <a class="navbar-brand" href="#">오시는길</a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/introduce.php">회사소개</a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/news.php">뉴스</a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/notice.php">공지사항</a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/get_directions.php">오시는길</a>
         </div>
         <div class="">
             <a class="navbar-brand" href="#">동영상</a>
@@ -47,6 +47,7 @@
             <a class="navbar-brand" href="http://uke.center/s_bbs/shop/">할인전용쇼핑몰</a>
             <a class="navbar-brand" href="https://uke.playhan.com/">UKE쇼핑몰</a>
             <a class="navbar-brand" href="http://ukeshop.co.kr/">코인전용쇼핑몰</a>
+            <a class="navbar-brand" href="http://ecowellmall.com/bbs/login.php">에코종합도매몰</a>
         </div>
     </div>
 </div>
