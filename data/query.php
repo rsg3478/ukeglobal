@@ -7,61 +7,86 @@ function list_count($table){
 }
 
 
-function notice_list($first, $list_size) {  
-    return "select * from board order by no desc limit $first, $list_size";
+    function notice_list($first, $list_size) {  
+    return "select * from notice_board order by no desc limit $first, $list_size";
     }
 
-    function notice_content ($table, $Number) {
-        return "select * from $table where no = $Number;";
+    function notice_content ($Number) {
+        return "select * from notice_board where no = $Number;";
     }
 
-    function news_list() {  
-        return "select * from board where category='news' order by no limit 0,10;";
+    function news_list($first, $list_size) {  
+        return "select * from news_board order by no desc limit $first, $list_size";
     }
     
+    function news_content ($Number) {
+        return "select * from news_board where no = $Number;";
+    }
+
     function popup_list($first, $list_size) {  
-        return "select * from popup order by no desc limit $first, $list_size";
+        return "select * from popup_board order by no desc limit $first, $list_size";
     }
     
-    function notice_insert($table,$true_false,$category,$title,$content,$session_id) {  
+    function popup_content ($Number) {
+        return "select * from popup_board where no = $Number;";
+    }
+
+    function video_list($first, $list_size) {  
+        return "select * from video_board order by no desc limit $first, $list_size";
+    }
     
-        $query = "insert into `{$table}` (
-            true_false,
-            category,
-            title,
-            content,
-            id
+    function video_content ($Number) {
+        return "select * from video_board where no = $Number;";
+    }
+
+    function notice_insert($title,$content,$start_date,$finish_date,$true_false) {  
+    
+        $query = "insert into notice_board (
+            notice_title,
+            notice_content,
+            notice_start_date,
+            notice_finish_date,
+            true_false
           ) values (
-           '{$true_false}',
-           '{$category}',
-           '{$title}',
-           '{$content}',
-           '{$session_id}'  
+          '{$title}',
+          '{$content}',
+          '{$start_date}',
+          '{$finish_date}',
+          '{$true_false}'  
           )";
     
           return $query;
     }
+
+    function news_insert($title,$content,$link) {  
     
-    function popup_insert($table,$title,$content,$session_id,$start_date,$finish_date,$width,$height,$top_position,$left_position) {  
+        $query = "insert into news_board (
+            news_title,
+            news_content,
+            news_link
+          ) values (
+          '{$title}',
+          '{$content}',
+          '{$link}'  
+          )";
     
-        $query = "insert into `{$table}` (
-            title,
-            content,
-            id,
-            start_date,
-            finish_date,
-            width,
-            height,
-            top_position,
-            left_position
+          return $query;
+    }
+
+    function popup_insert($title,$content,$start_date,$finish_date,$top_position,$left_position) {  
+    
+        $query = "insert into popup_board (
+            popup_title,
+            popup_content,
+            popup_start_date,
+            popup_finish_date,
+            popup_top_position,
+            popup_left_position
           ) values (
            '{$title}',
            '{$content}',
-           '{$session_id}',
            '{$start_date}',
            '{$finish_date}',
-           '{$width}',
-           '{$height}',
            '{$top_position}',
            '{$left_position}'
           )";

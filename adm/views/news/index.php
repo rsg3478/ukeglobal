@@ -25,9 +25,7 @@ include_once('../../../data/db_pdo.php'); // 데이터 베이스 접속 불러�
   $first = ($_GET['page']*$list_size)-$list_size;
 
   // 1. 리스트에 출력하기 위한 sql문
-  $table = "board";
-  //$data = list_count($table);
-  $list_sql = notice_list($first, $list_size);
+  $list_sql = news_list($first, $list_size);
   $list_stt = $connect->prepare($list_sql) or die($connect->errorInfo());
   $list_stt -> execute();
 ?>
@@ -43,36 +41,25 @@ include_once('../../../data/db_pdo.php'); // 데이터 베이스 접속 불러�
           <tr>
               <th width="70">번호</th>
                 <th width="500">제목</th>
-                <th width="120">글쓴이</th>
                 <th width="100">작성일</th>
-                <th width="100">조회수</th>
             </tr>
         </thead>
 
 <?php
   while($board=$list_stt->fetch())  {
               //title변수에 DB에서 가져온 title을 선택
-              $title=$board["title"]; 
+              $title=$board["news_title"]; 
               if(strlen($title)>30){ 
                 //title이 30을 넘어서면 ...표시
-                $title=str_replace($board["title"],mb_substr($board["title"],0,30,"utf-8")."...",$board["title"]);
+                $title=str_replace($board["news_title"],mb_substr($board["news_title"],0,30,"utf-8")."...",$board["news_title"]);
               } 
  ?>
  
     <tbody>
       <tr>
         <td width="70"><?php echo $board['no']; ?></td>
-        <td width="500"><a href=""><?php echo $title;?></a></td>
-        <td width="120"><?php echo $board['category']?></td>
-        <td width="100"><?php echo $board['id']?></td>
-        <td width="100"><?php echo $board['date']; ?></td>
-        <? if($board['true_false'])?>
-        <td width="100">
-          <? if($board['true_false'] == 1){?>
-          <input type="checkbox" value="<?php echo $board['no'];?>" checked>
-          <?} else{?>
-          <input type="checkbox" value="<?php echo $board['no'];?>">
-          <?}?>
+        <td width="500"><a href="./news_w_u.php?no=<?php echo $board['no'];?>"><?php echo $title;?></a></td>
+        <td width="100"><?php echo $board['news_write_date']; ?></td>
        </td>
       </tr>
     </tbody>
@@ -84,6 +71,7 @@ include_once('../../../data/db_pdo.php'); // 데이터 베이스 접속 불러�
 <?php
 
   // 2. 총 페이지를 구하기 위한 sql문
+  $table = "news_board";
   $total_sql = list_count($table);
   $total_stt=$connect->prepare($total_sql);
   $total_stt->execute();

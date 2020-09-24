@@ -34,7 +34,7 @@ function check_true_false_confirm(true_false,check_no) {
 
     $.ajax({
         type: 'post',
-        url: './connection/board_checkbox_true_false.php',
+        url: '/adm/connection/board_checkbox_true_false.php',
         data: {
             no : check_no,
          check : true_false
