@@ -23,32 +23,32 @@
 <div class="menufome">
     <div class="fomebox">
         <div class="">
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/introduce.php">회사소개</a>
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/news.php">뉴스</a>
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/notice.php">공지사항</a>
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/get_directions.php">오시는길</a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/introduce.php"><?php echo $lang['UKE_introduction']; ?></a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/news.php"><?php echo $lang['news']; ?></a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/notice.php"><?php echo $lang['notice']; ?></a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/get_directions.php"><?php echo $lang['way to come']; ?></a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="#">동영상</a>
-            <a class="navbar-brand" href="#">추천시스템</a>
+            <a class="navbar-brand" href="#"><?php echo $lang['video']; ?></a>
+            <a class="navbar-brand" href="#"><?php echo $lang['Recommendation system']; ?></a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="https://www.uke.co.kr/" target="_blank">UKE거래소</a>
-            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_chc" target="_blank">CHC</a>
-            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_gec" target="_blank">GEC</a>
-            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_mdc" target="_blank">MDC</a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/" target="_blank"><?php echo $lang['exchange']; ?></a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_chc" target="_blank"><?php echo $lang['CHC']; ?></a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_gec" target="_blank"><?php echo $lang['GEC']; ?></a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_mdc" target="_blank"><?php echo $lang['MDC']; ?></a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="https://wcc-kr.uke.co.kr/home/" target="_blank">WCC</a>
-            <a class="navbar-brand" href="http://wallet.uke.co.kr/login" target="_blank">ATM</a>
-            <a class="navbar-brand" href="https://chc.uke.co.kr/home/" target="_blank">CHC</a>
-            <a class="navbar-brand" href="https://chc.uke.co.kr/home/" data-toggle="modal" data-target="#button01">GEC</a>
+            <a class="navbar-brand" href="https://wcc-kr.uke.co.kr/home/" target="_blank"><?php echo $lang['WCC']; ?></a>
+            <a class="navbar-brand" href="http://wallet.uke.co.kr/login" target="_blank"><?php echo $lang['ATM']; ?></a>
+            <a class="navbar-brand" href="https://chc.uke.co.kr/home/" target="_blank"><?php echo $lang['CHC']; ?></a>
+            <a class="navbar-brand" href="https://chc.uke.co.kr/home/" data-toggle="modal" data-target="#button01"><?php echo $lang['GEC']; ?></a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="http://uke.center/s_bbs/shop/" target="_blank">할인전용쇼핑몰</a>
-            <a class="navbar-brand" href="https://uke.playhan.com/" target="_blank">UKE쇼핑몰</a>
-            <a class="navbar-brand" href="http://ukeshop.co.kr/" target="_blank">코인전용쇼핑몰</a>
-            <a class="navbar-brand" href="http://ecowellmall.com/bbs/login.php" target="_blank">에코종합도매몰</a>
+            <a class="navbar-brand" href="http://uke.center/s_bbs/shop/" target="_blank"><?php echo $lang['Discount shopping mall']; ?></a>
+            <a class="navbar-brand" href="https://uke.playhan.com/" target="_blank"><?php echo $lang['UKE shopping mall']; ?></a>
+            <a class="navbar-brand" href="http://ukeshop.co.kr/" target="_blank"><?php echo $lang['coin shopping mall']; ?></a>
+            <a class="navbar-brand" href="http://ecowellmall.com/bbs/login.php" target="_blank"><?php echo $lang['Eco General Wholesale']; ?></a>
         </div>
     </div>
 </div>
