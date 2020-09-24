@@ -1,4 +1,4 @@
-<section class="bg-bluewhite nanumsquare features-margin">
+<section class="bg-bluewhite nanumsquare features-margin-bottom">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

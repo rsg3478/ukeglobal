@@ -33,21 +33,22 @@
             <a class="navbar-brand" href="#">추천시스템</a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_chc">CHC</a>
-            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_gec">GEC</a>
-            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_mdc">MDC</a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/" target="_blank">UKE거래소</a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_chc" target="_blank">CHC</a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_gec" target="_blank">GEC</a>
+            <a class="navbar-brand" href="https://www.uke.co.kr/exchange/krw_mdc" target="_blank">MDC</a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="https://wcc-kr.uke.co.kr/home/">WCC</a>
-            <a class="navbar-brand" href="http://wallet.uke.co.kr/login">ATM</a>
-            <a class="navbar-brand" href="https://chc.uke.co.kr/home/">CHC</a>
+            <a class="navbar-brand" href="https://wcc-kr.uke.co.kr/home/" target="_blank">WCC</a>
+            <a class="navbar-brand" href="http://wallet.uke.co.kr/login" target="_blank">ATM</a>
+            <a class="navbar-brand" href="https://chc.uke.co.kr/home/" target="_blank">CHC</a>
             <a class="navbar-brand" href="https://chc.uke.co.kr/home/" data-toggle="modal" data-target="#button01">GEC</a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="http://uke.center/s_bbs/shop/">할인전용쇼핑몰</a>
-            <a class="navbar-brand" href="https://uke.playhan.com/">UKE쇼핑몰</a>
-            <a class="navbar-brand" href="http://ukeshop.co.kr/">코인전용쇼핑몰</a>
-            <a class="navbar-brand" href="http://ecowellmall.com/bbs/login.php">에코종합도매몰</a>
+            <a class="navbar-brand" href="http://uke.center/s_bbs/shop/" target="_blank">할인전용쇼핑몰</a>
+            <a class="navbar-brand" href="https://uke.playhan.com/" target="_blank">UKE쇼핑몰</a>
+            <a class="navbar-brand" href="http://ukeshop.co.kr/" target="_blank">코인전용쇼핑몰</a>
+            <a class="navbar-brand" href="http://ecowellmall.com/bbs/login.php" target="_blank">에코종합도매몰</a>
         </div>
     </div>
 </div>
