@@ -6,8 +6,6 @@ function submitContents(elClickedObj) {
     // 에디터의 내용에 대한 값 검증은 이곳에서 document.getElementById("content").value를 이용해서 처리하면
     // 됩니다. form data 를 변수에 저장
     let formData = $("form[name=popup_nse]").serialize();
-    console.log(formData);
-
     validate();
     form_submit(formData);
 
@@ -40,7 +38,7 @@ function validate() {
         return false;
     }
 
-    if ($("#width").val() == "") {
+/*     if ($("#width").val() == "") {
         alert("가로 넓이를 입력해주세요");
         $("#width").focus();
         return false;
@@ -50,7 +48,7 @@ function validate() {
         alert("높이를 입력해주세요");
         $("#height").focus();
         return false;
-    }
+    } */
 
     if ($("#top_positionp").val() == "") {
         alert("상단 위치를 지정해주세요");

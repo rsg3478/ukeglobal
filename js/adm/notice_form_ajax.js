@@ -15,18 +15,12 @@ form_submit(formData);
 //유효성 검사
 function validate() {    
 
-    if($("#category").val()=="") {
-        alert("카테고리를 선택해주세요");
-        $("#category").focus();
-        return false;
-    }
-
     if($("#title").val()=="") {
         alert("제목을 입력해주세요");
         $("#title").focus();
         return false;
     }
-
+    
     if($("#content").val()=="<br>") {
         alert("내용을 입력해주세요");
         $("#content").focus();
@@ -41,7 +35,7 @@ function form_submit(formData){
 
 $.ajax({
 type : 'post',
-url : '/adm/connection/board_db_insert.php',
+url : '/adm/connection/notice_db_insert.php',
 data : formData,
 //dataType : 'json',
 error: function(xhr, status, error){

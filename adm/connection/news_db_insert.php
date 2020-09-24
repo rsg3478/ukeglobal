@@ -1,25 +1,14 @@
 <?php
         include_once('../../data/db_pdo.php'); // 데이터 베이스 접속 불러오기
 
-$table = "board";
-
-$true_false = $_POST['check'];
+$title = $_POST['title'];
+$content = $_POST['content'];
+$link = $_POST['link'];
 
 if ($_POST['check'] != 1)
 $true_false = 0;
 
-$category = $_POST['category'];
-$title = $_POST['title'];
-$content = $_POST['content'];
-$session_id = "상혁이";
-
-/* $table = "board";
-$true_false = 0;
-$category = "notice";
-$title = "공지사항";
-$content = "test"; */
-
-$query = notice_insert($table,$true_false,$category,$title,$content,$session_id);
+$query = news_insert($title,$content,$link);
 
 $res = $connect->query($query) or die($connect->errorInfo());
 

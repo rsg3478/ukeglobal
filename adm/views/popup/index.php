@@ -43,30 +43,25 @@ include_once('../../../data/db_pdo.php'); // 데이터 베이스 접속 불러�
           <tr>
               <th width="70">번호</th>
                 <th width="500">제목</th>
-                <th width="120">글쓴이</th>
                 <th width="100">작성일</th>
-                <th width="100">조회수</th>
             </tr>
         </thead>
 
         <?php
   while($popup=$list_stt->fetch())  {
               //title변수에 DB에서 가져온 title을 선택
-              $title=$popup["title"]; 
+              $title=$popup["popup_title"]; 
               if(strlen($title)>30){ 
                 //title이 30을 넘어서면 ...표시
-                $title=str_replace($popup["title"],mb_substr($popup["title"],0,30,"utf-8")."...",$popup["title"]);
+                $title=str_replace($popup["popup_title"],mb_substr($popup["popup_title"],0,30,"utf-8")."...",$popup["popup_title"]);
               } 
  ?>
  
  <tbody>
       <tr>
         <td width="70"><?php echo $popup['no']; ?></td>
-        <td width="500"><a href=""><?php echo $title;?></a></td>
-        <td width="120"><?php echo $popup['category']?></td>
-        <td width="100"><?php echo $popup['start_date']?></td>
-        <td width="100"><?php echo $popup['finish_date'];?></td>
-        <td width="100"><?php echo $popup['date'];?></td>
+        <td width="500"><a href="./popup_w_u.php?no=<?php echo $board['no'];?>"><?php echo $title;?></a></td>
+        <td width="100"><?php echo $popup['popup_write_date'];?></td>
       </tr>
     </tbody>
 
@@ -77,6 +72,7 @@ include_once('../../../data/db_pdo.php'); // 데이터 베이스 접속 불러�
 <?php
 
   // 2. 총 페이지를 구하기 위한 sql문
+  $table = "popup_board";
   $total_sql = list_count($table);
   $total_stt=$connect->prepare($total_sql);
   $total_stt->execute();
