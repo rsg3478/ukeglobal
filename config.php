@@ -10,7 +10,7 @@ define('UKE_SCSS_DIR',      'scss');
 define('UKE_VENDOR_DIR',      'vendor');
 define('UKE_ADMIN_DIR',      'adm');
 define('UKE_UPLOAD_DIR',      'upload');
-//define('UKE_DATA_DIR',      'data');
+define('UKE_DATA_DIR',      'data');
 
 // URL 은 브라우저상에서의 경로 (도메인으로 부터의)
 if (UKE_DOMAIN) {
@@ -48,7 +48,6 @@ define('UKE_SCSS_PATH',      UKE_PATH.'/'.UKE_SCSS_DIR);
 define('UKE_VENDOR_PATH',      UKE_PATH.'/'.UKE_VENDOR_DIR);
 define('UKE_ADMIN_PATH',      UKE_PATH.'/'.UKE_ADMIN_DIR);
 define('UKE_UPLOAD_PATH',      UKE_PATH.'/'.UKE_UPLOAD_DIR);
-
-//define('UKE_DATA_URL',      UKE_URL.'/'.UKE_DATA_DIR);
+define('UKE_DATA_URL',      UKE_URL.'/'.UKE_DATA_DIR);
 // define('UKE_MAIN_URL',      UKE_WEB_URL.'/uke/main');
 ?>

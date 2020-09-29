@@ -7,12 +7,24 @@ function list_count($table){
 }
 
 
+    function mainpage_notice_list(){
+        return "select * from notice_board order by no desc limit 2";
+    }
+
+    function notice_home_list() {  
+        return "select * from notice_board order by no asc";
+    }
+
     function notice_list($first, $list_size) {  
-    return "select * from notice_board order by no desc limit $first, $list_size";
+        return "select * from notice_board order by no desc limit $first, $list_size";
     }
 
     function notice_content ($Number) {
         return "select * from notice_board where no = $Number;";
+    }
+
+    function mainpage_news_list(){
+        return "select * from news_board order by no desc limit 2";
     }
 
     function news_list($first, $list_size) {  
@@ -93,5 +105,6 @@ function list_count($table){
           
           return $query;
     }
+
 
     ?>
