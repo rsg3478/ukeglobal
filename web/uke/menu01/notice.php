@@ -15,33 +15,60 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu01/submenu.php');
                     <hr class="noticehr">
                     <br>
                     <div id="accordion">
-                    <?php
+
+                    <?php 
                     include_once($_SERVER['DOCUMENT_ROOT'].'/data/db_pdo.php');
                     $notice_sql = notice_home_list();
                     $notice_Array = $connect->prepare($notice_sql) or die($connect->errorInfo());
                     $notice_Array -> execute();
 
                     while($notice=$notice_Array->fetch())  {
+                        if($notice["no"]  == 4){
                     ?>
                         <div class="card bordernono">
                             <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                <?php echo $notice["notice_title"]?>
+                                <a  class="collapsed card-link" data-toggle="collapse" href="#collapse<?php echo $notice["no"] ?>">
+                                <?php echo $notice["notice_title"] ?>
                                 </a>
-                                <a class="notice_view_more_btn" data-toggle="collapse" href="#collapseOne">
+                                <a class="notice_view_more_btn" data-toggle="collapse" href="#collapse<?php echo $notice["no"] ?>">
                                     <img src="<?php echo UKE_IMG_URL?>/menu01/arrow.png" alt="arrow">
                                 </a>
-                                <p class="noticefont"><?php echo $notice["notice_write_date"]?></p>
+                                <p class="noticefont"><?php echo $notice["notice_write_date"] ?></p>
                             </div>
-                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div id="collapse<?php echo $notice["no"] ?>" class="collapse show" data-parent="#accordion">
                                 <div class="card-body">
-                                <?php echo $notice["notice_content"]?>
+                                asdfas
                                 </div>
                                 <hr>
                             </div>
                         </div>
-                    <?php } ?>
+                        <?php }else{ ?>
 
+                        <div class="card bordernono">
+                            <div class="card-header">
+                                <a  class="card-link" data-toggle="collapse" href="#collapse<?php echo $notice["no"] ?>">
+                                <?php echo $notice["notice_title"] ?>
+                                </a>
+                                <a class="notice_view_more_btn" data-toggle="collapse" href="#collapse<?php echo $notice["no"] ?>">
+                                    <img src="<?php echo UKE_IMG_URL?>/menu01/arrow.png" alt="arrow">
+                                </a>
+                                <p class="noticefont"><?php echo $notice["notice_write_date"] ?></p>
+                            </div>
+                            <div id="collapse<?php echo $notice["no"] ?>" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                asdfas
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        
+
+                    <?php }
+                
+                } 
+                ?>
+                       
+                      
                     </div>
                 </div>
             </div>

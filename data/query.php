@@ -12,7 +12,7 @@ function list_count($table){
     }
 
     function notice_home_list() {  
-        return "select * from notice_board order by no desc";
+        return "select * from notice_board order by no asc";
     }
 
     function notice_list($first, $list_size) {  
