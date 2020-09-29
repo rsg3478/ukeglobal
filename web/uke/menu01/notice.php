@@ -23,6 +23,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu01/submenu.php');
                     $notice_Array -> execute();
 
                     while($notice=$notice_Array->fetch())  {
+                        
                         if($notice["no"]  == 4){
                     ?>
                         <div class="card bordernono">
