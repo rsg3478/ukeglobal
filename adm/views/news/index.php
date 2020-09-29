@@ -7,7 +7,7 @@ include_once('../../common/menu.php');
 <div class="board_tool"> 
 
 <?php
-include_once('../../../data/db_pdo.php'); // 데이터 베이스 접속 불러오기
+include_once($_SERVER['DOCUMENT_ROOT'].'/data/db_pdo.php'); // 데이터 베이스 접속 불러오기
 
   // 페이징에 필요한 변수 11개
   // $_GET['page'], $list_size, $page_size, $first

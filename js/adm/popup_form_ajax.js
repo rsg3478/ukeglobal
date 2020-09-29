@@ -6,13 +6,14 @@ function submitContents(elClickedObj) {
     // 에디터의 내용에 대한 값 검증은 이곳에서 document.getElementById("content").value를 이용해서 처리하면
     // 됩니다. form data 를 변수에 저장
     let formData = $("form[name=popup_nse]").serialize();
-    validate();
-    form_submit(formData);
+    validate(formData);
 
 }
 
 //유효성 검사
-function validate() {
+function validate(formData) {
+
+    var datatimeRegexp = /[0-9]{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])/;
 
     if ($("#title").val() == "") {
         alert("제목을 입력해주세요");
@@ -27,13 +28,25 @@ function validate() {
     }
 
     if ($("#start_date").val() == "") {
-        alert("팝업 시작일을 선택해주세요");
+        alert("팝업 시작일을 입력해주세요");
         $("#start_date").focus();
         return false;
     }
 
     if ($("#fifnish_date").val() == "") {
-        alert("팝업 종료일을 선택해주세요");
+        alert("팝업 종료일을 입력해주세요");
+        $("#fifnish_date").focus();
+        return false;
+    }
+
+    if (!datatimeRegexp.test($("#start_date").val() )) {
+        alert("팝업 시작일을 날짜 형식에 맞게 작성해주세요 yyyy-mm-dd");
+        $("#start_date").focus();
+        return false;
+    }
+
+    if (!datatimeRegexp.test($("#fifnish_date").val() )) {
+        alert("팝업 종료일을 날짜 형식에 맞게 작성해주세요 yyyy-mm-dd");
         $("#fifnish_date").focus();
         return false;
     }
@@ -62,6 +75,9 @@ function validate() {
         return false;
     }
 
+    
+    form_submit(formData);
+
 }
 
 //ajax 전송
@@ -76,7 +92,10 @@ function form_submit(formData) {
             alert("error:" + error);
         },
         success: function (data) {
-            console.log(data)
+            console.log(data);
+             if(data == "success"){
+                location.href="/adm/views/popup"
+             }
         }
     });
 

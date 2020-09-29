@@ -37,7 +37,7 @@ if($_GET['no'] == null) { ?>
 
 <?php } else {
 
-        include_once('../../../data/db_pdo.php');
+        include_once($_SERVER['DOCUMENT_ROOT'].'/data/db_pdo.php');
         $content_sql = notice_content ($_GET['no']);
         $content_Array = $connect->prepare($content_sql) or die($connect->errorInfo());
         $content_Array -> execute();

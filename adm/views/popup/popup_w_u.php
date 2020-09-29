@@ -13,6 +13,7 @@ include_once('../../common/menu.php');
 
     <table>
 <form name="popup_nse" onsubmit="return submitContents();" method="post">
+
 <? 
 if($_GET['no'] == null) { ?>
 
@@ -26,8 +27,8 @@ if($_GET['no'] == null) { ?>
 <th>가로</th><td><input type="text" name="width" id="width"></td>
 </tr> -->
 <tr>
-<th>탑위치</th><td><input type="text" name="top_position" id="top_position"></td> 
-<th>left위치</th><td><input type="text" name="left_position" id="left_position"></td>
+<th>팝업 상단 위치</th><td><input type="number" name="top_position" id="top_position"></td> 
+<th>팝업 가로 위치</th><td><input type="number" name="left_position" id="left_position"></td>
 </tr>
 <tr>
 <th>내용</th><td colspan="3"><textarea name="content" id="content" class="nse_content"></textarea></td>
@@ -38,11 +39,11 @@ if($_GET['no'] == null) { ?>
 
 <?php } else {
 
-include_once('../../../data/db_pdo.php');
-$content_sql = notice_content ($_GET['no']);
+include_once($_SERVER['DOCUMENT_ROOT'].'/data/db_pdo.php');
+$content_sql = popup_content($_GET['no']);
 $content_Array = $connect->prepare($content_sql) or die($connect->errorInfo());
 $content_Array -> execute();
-$content=$content_Array->fetch()
+$content = $content_Array->fetch()
 
 ?>
 
@@ -52,11 +53,11 @@ $content=$content_Array->fetch()
 <th>종료</th><td><input type="text" name="finish_date" id="finish_date" value="<?php echo $content['popup_finish_date']; ?>"></td>
 </tr>
 <tr>
-<th>팝업 상단 위치</th><td><input type="text" name="top_position" id="top_position" value="<?php echo $content['popup_top_position']; ?>"></td>
-<th>팝업 가로 위치</th><td><input type="text" name="left_position" id="left_position" value="<?php echo $content['popup_left_position']; ?>"></td>
+<th>팝업 상단 위치</th><td><input type="number" name="top_position" id="top_position" value="<?php echo $content['popup_top_position']; ?>"></td>
+<th>팝업 가로 위치</th><td><input type="number" name="left_position" id="left_position" value="<?php echo $content['popup_left_position']; ?>"></td>
 </tr>
 <tr>
-<th>내용</th><td colspan="3"><textarea name="content" id="content" class="nse_content"></textarea></td>
+<th>내용</th><td colspan="3"><textarea name="content" id="content" class="nse_content"><?php echo $content['popup_content']; ?></textarea></td>
 </tr>
 <tr>
 <td><input type="submit" value="전송" onclick="submitContents(this); return false;" /></td>

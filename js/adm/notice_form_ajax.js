@@ -7,8 +7,7 @@ oEditors.getById["content"].exec("UPDATE_CONTENTS_FIELD", []);
 let formData = $("form[name=board_nse]").serialize() ;
 //console.log(formData);
 
-validate();
-form_submit(formData);
+validate(formData);
 
 }
 
@@ -27,6 +26,9 @@ function validate() {
         return false;
     }
 
+    
+form_submit(formData);
+
 }
 
 
@@ -42,7 +44,10 @@ error: function(xhr, status, error){
     alert("error:"+error);
 },
 success : function(data){
-    console.log(data);
+    //console.log(data);
+    if(data == "success"){
+        location.href="/adm/views/notice"
+        }
 }
 });
 
