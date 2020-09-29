@@ -17,7 +17,7 @@
                         <div class="col-lg-6">
                             <div class="card marginbottom1rem" >
                                 <div class="mainnewsimgbox">
-                                    <img class="mx-auto d-block" src="<?php echo $news['news_img01'] ?>" alt="Card image">
+                                    <img class="mx-auto d-block img" src="<?php echo $news['news_img01'] ?>" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="ellipsis_multi"><a href="<?php echo $news['no'] ?>"><?php echo $news["news_content"] ?></a></p>
@@ -44,9 +44,9 @@
 
                     while($notice=$notice_Array->fetch())  {
                     ?>
-                        <div class="p-4 main_news">
+                        <div class="p-4 main_news width100">
                             <h6 class="ellipsis_multi_one fontsize125"><?php echo $notice["notice_title"] ?></h6>
-                            <p class="mb-0 ellipsis_multi_one"><?php echo $notice["notice_content"] ?></p>
+                            <div class="mb-0 ellipsis_multi_one"><?php echo $notice["notice_content"] ?></div>
                             <br>
                             <h6><?php echo $notice["notice_write_date"] ?></h6>
                             <hr class="hr2">
@@ -54,23 +54,6 @@
                         <?php }  ?>
                     </div>
                 </div>
-                <!-- <div class="mx-auto mb-5 my-lg-5">
-                    <div class="p-3 main_news">
-                        <h6 class="ellipsis_multi_one">공지사항제목공지사항제목공지사항제목공지사항제목공지사항제목공지사항제목공지사항제목</h6>
-                        <p class="mb-0 ellipsis_multi">공지사항공지사항공지사항!</p>
-                        <h6 class="textright"><small><i>2020.03.04</i></small></h6>
-                    </div>
-                    <div class="p-3 main_news">
-                        <h6 class="ellipsis_multi_one">공지사항제목</h6>
-                        <p class="mb-0 ellipsis_multi">공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항!</p>
-                        <h6 class="textright"><small><i>2020.03.04</i></small></h6>
-                    </div>
-                    <div class="p-3 main_news">
-                        <h6 class="ellipsis_multi_one">공지사항제목</h6>
-                        <p class="mb-0 ellipsis_multi">공지사항공지사항공지사항!</p>
-                        <h6 class="textright"><small><i>2020.03.04</i></small></h6>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>

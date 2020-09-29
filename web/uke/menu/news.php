@@ -19,8 +19,8 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu/submenu.php');
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="card marginbottom1rem">
-                                <div class="mainnewsimgbox">
-                                    <img class="mx-auto d-block" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
+                                <div class="mainnewsimgbox width80">
+                                    <img class="mx-auto d-block img" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="ellipsis_multi">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
@@ -30,8 +30,8 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu/submenu.php');
                         </div>
                         <div class="col-lg-3">
                             <div class="card marginbottom1rem" >
-                                <div class="mainnewsimgbox">
-                                    <img class="mx-auto d-block" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
+                                <div class="mainnewsimgbox width80">
+                                    <img class="mx-auto d-block img" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="ellipsis_multi">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
@@ -41,8 +41,8 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu/submenu.php');
                         </div>
                         <div class="col-lg-3">
                             <div class="card marginbottom1rem" >
-                                <div class="mainnewsimgbox">
-                                    <img class="mx-auto d-block" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
+                                <div class="mainnewsimgbox width80">
+                                    <img class="mx-auto d-block img" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="ellipsis_multi">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
@@ -52,8 +52,8 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu/submenu.php');
                         </div>
                         <div class="col-lg-3">
                             <div class="card marginbottom1rem" >
-                                <div class="mainnewsimgbox">
-                                    <img class="mx-auto d-block" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
+                                <div class="mainnewsimgbox width80">
+                                    <img class="mx-auto d-block img" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="ellipsis_multi">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
@@ -63,8 +63,8 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu/submenu.php');
                         </div>
                         <div class="col-lg-3">
                             <div class="card marginbottom1rem" >
-                                <div class="mainnewsimgbox">
-                                    <img class="mx-auto d-block" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
+                                <div class="mainnewsimgbox width80">
+                                    <img class="mx-auto d-block img" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="ellipsis_multi">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
@@ -74,8 +74,8 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu/submenu.php');
                         </div>
                         <div class="col-lg-3">
                             <div class="card marginbottom1rem" >
-                                <div class="mainnewsimgbox">
-                                    <img class="mx-auto d-block" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
+                                <div class="mainnewsimgbox width80">
+                                    <img class="mx-auto d-block img" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="ellipsis_multi">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
@@ -85,8 +85,8 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/menu/submenu.php');
                         </div>
                         <div class="col-lg-3">
                             <div class="card marginbottom1rem" >
-                                <div class="mainnewsimgbox">
-                                    <img class="mx-auto d-block" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
+                                <div class="mainnewsimgbox width80">
+                                    <img class="mx-auto d-block img" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
                                 </div>
                                 <div class="card-body">
                                     <p class="ellipsis_multi">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
