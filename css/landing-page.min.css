@@ -279,6 +279,7 @@ footer.footer {
 
 .main_notice {
     height: 145px;
+    width: 100%;
 }
 
 .menufome {
@@ -418,7 +419,8 @@ footer.footer {
     margin: auto;
 }
 
-.submenu li:hover {
+.submenu li:hover,
+.submenu li a.active {
     background-color: aliceblue;
 }
 
@@ -426,7 +428,8 @@ footer.footer {
     color: aliceblue;
 }
 
-.submenu li a:hover {
+.submenu li a:hover,
+.submenu li a.active {
     color: #343a40;
     font-weight: 900;
 }

@@ -3,8 +3,8 @@
     <div class="container">
         <a class="navbar-brand" href="<?php $_SERVER['DOCUMENT_ROOT']?>/index.php">UKEglobal</a>
         <div class="menucenter">
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/introduce.php">UKE</a>
-            <a class="navbar-brand" href="#">소개</a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu/introduce.php">UKE</a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu/videw.php">소개</a>
             <a class="navbar-brand" href="#">거래소</a>
             <a class="navbar-brand" href="#">지갑</a>
             <a class="navbar-brand" href="#">쇼핑몰</a>
@@ -23,13 +23,13 @@
 <div class="menufome">
     <div class="fomebox">
         <div class="">
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/introduce.php"><?php echo $lang['UKE_introduction']; ?></a>
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/news.php"><?php echo $lang['news']; ?></a>
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/notice.php"><?php echo $lang['notice']; ?></a>
-            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu01/get_directions.php"><?php echo $lang['way to come']; ?></a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu/introduce.php"><?php echo $lang['UKE_introduction']; ?></a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu/news.php"><?php echo $lang['news']; ?></a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu/notice.php"><?php echo $lang['notice']; ?></a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu/get_directions.php"><?php echo $lang['way to come']; ?></a>
         </div>
         <div class="">
-            <a class="navbar-brand" href="#"><?php echo $lang['video']; ?></a>
+            <a class="navbar-brand" href="<?php echo UKE_WEB_URL?>/uke/menu/videw.php"><?php echo $lang['video']; ?></a>
             <a class="navbar-brand" href="#"><?php echo $lang['Recommendation system']; ?></a>
         </div>
         <div class="">
