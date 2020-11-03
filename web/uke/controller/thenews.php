@@ -2,8 +2,9 @@
 
     
 //1. DB 연결
+include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/controller/common.php');
 
-$pdo = new PDO('mysql:host=luie12.cafe24.com;dbname=luie12;charset=utf8', 'luie12', 'qazxsw1@');  
+$pdo = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8', $user , $pw);  
 
 function main_news_list(){
 
@@ -11,7 +12,7 @@ function main_news_list(){
 
 try
 {    
-    $select_news_query = "select * from news_board order by no desc limit 2";
+    $select_news_query = "SELECT * FROM news_board WHERE NO IN (SELECT MAX(NO) FROM news_board WHERE language_type = 'ko' GROUP BY news_type)";
 
     $result = $pdo -> query($select_news_query) or die($pdo->errorInfo());
 

@@ -1,3 +1,7 @@
+<?php
+include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/controller/main_videw.php');
+?>
+
 <section class="bg-bluewhite nanumsquare features-margin-bottom">
     <div class="container">
         <div class="row">
@@ -6,50 +10,26 @@
                     <h4 class="p-1 bolder">Uke 동영상</h4>
                     <a class="view_more_btn" >더보기 &#62;</a>
                     <div class="row">
+                    <?php 
+                   
+                    $video_result = main_video_list();
+
+                    while ($video_row = $video_result->fetch(PDO::FETCH_ASSOC)) { 
+
+                    ?>
                         <div class="col-lg-3">
                             <div class="card" >
                                 <div class="mainnewsimgbox width80">
-                                    <img class="mx-auto d-block img" src="https://cdn.newsin.co.kr/news/photo/202003/76304_62550_2114.jpg" alt="Card image">
+                                    <img class="mx-auto d-block img" src="<?php echo $video_row['video_img'] ?>" alt="Card image">
                                 </div>
                                 <div class="card-body">
-                                    <p class="ellipsis_multi_one">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
-                                    <h6>2020년 03월 04일</h6>
+                                    <p class="ellipsis_multi_one"><?php echo $video_row["video_title"] ?></p>
+                                    <h6><?php echo $video_row["video_write_date"] ?></h6>
+                                    <?php echo $video_row["video_link"] ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="card" >
-                                <div class="mainnewsimgbox width80">
-                                    <img class="mx-auto d-block img" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body">
-                                    <p class="ellipsis_multi_one">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
-                                    <h6>2020년 03월 04일</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card" >
-                                <div class="mainnewsimgbox width80">
-                                    <img class="mx-auto d-block img" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body">
-                                    <p class="ellipsis_multi_one">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
-                                    <h6>2020년 03월 04일</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="card" >
-                                <div class="mainnewsimgbox width80">
-                                    <img class="mx-auto d-block img" src="http://www.it-b.co.kr/news/photo/201911/35256_33023_3414.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body">
-                                    <p class="ellipsis_multi_one">디지털화폐 스퍼트(SPURT)X국내거래소 상장된 HBT(에이치비티) 코인 교환</p>
-                                    <h6>2020년 03월 04일</h6>
-                                </div>
-                            </div>
-                        </div>
+                    <?php } ?>
                     </div>
                 </div>
             </div>

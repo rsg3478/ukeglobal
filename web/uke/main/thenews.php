@@ -23,7 +23,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/web/uke/controller/thenews.php');
                                     <img class="mx-auto d-block img" src="<?php echo $news_row['news_img01'] ?>" alt="Card image">
                                 </div>
                                 <div class="card-body">
-                                    <p class="ellipsis_multi"><a href="<?php echo $news_row['no'] ?>"><?php echo $news_row["news_content"] ?></a></p>
+                                    <p class="ellipsis_multi"><a href="<?php echo $news_row['no'] ?>"><?php echo $news_row["news_title"] ?></a></p>
                                     <h6><?php echo $news_row['news_write_date'] ?></h6>
                                 </div>
                             </div>
