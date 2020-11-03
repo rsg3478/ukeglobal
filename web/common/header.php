@@ -1,7 +1,6 @@
 <?php
 include_once($_SERVER['DOCUMENT_ROOT'].'/config.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'/language/korean/menu.php');
-
+include_once($_SERVER['DOCUMENT_ROOT'].'/language/korean/menu.php');             
 ?>
 <!DOCTYPE html>
 <html lang="ko">
