@@ -1,0 +1,158 @@
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: #d49466;
+}
+
+html,body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 8px 12px;
+}
+
+.header a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.toggle_menu{
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  }
+  
+  .toggle_menu li{
+    flex-direction: column;
+    padding: 20px 24px;
+  }
+  
+  .toggle_menu li:hover{
+    background-color: var(--accent-color);
+   }
+
+   .toggle_menu a{
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+.header_logo{
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.header_logo i{
+  color:var(--accent-color);
+}
+
+.header_Logout{
+  list-style: none;
+  color: var(--text-color);
+  display: flex;
+  padding: 0;
+}
+
+.header_Logout li{
+  padding: 8px 30px;
+}
+
+.header_togleBtn{
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.header li:hover{
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.mainbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0;
+height: 100%;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--background-color);
+  width: 12%;
+  height: 100%;
+}
+
+.sidebar_menu{
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar_menu a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sidebar_menu li{
+  flex-direction: column;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.sidebar li:hover{
+  background-color: var(--accent-color);
+ }
+
+.dashboard{
+width: 100%;
+height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header{
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 24px;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .toggle_menu{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .toggle_menu li{
+      width: 100%;
+      text-align: center;
+  }
+
+  .header_Logout{
+      display: none;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .header_togleBtn{
+      display: block;
+  }
+
+  .toggle_menu.active,
+  .header_Logout.active{
+      display: flex;
+  }
+}
